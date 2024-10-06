@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ny92zpe+7f4ocarjb(dltofmm!gx8rxj=wz32_2f20xl5$v!*3'
+SECRET_KEY = 'django-insecure-mjq1hajzz&!tng055kv$02jh8p7i0gkg-wmjg##uv@h&62d=0z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-kay13051976-boutiqueado-760gzwo198n.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['8000-kay13051976-boutiqueado-760gzwo198n.ws.codeinstitute-ide.net',]
 
 
 # Application definition
@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'home',
     'products',
-    
 ]
 
 MIDDLEWARE = [
@@ -69,7 +68,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by alluath
+                'django.template.context_processors.request', # require by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -157,3 +156,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
